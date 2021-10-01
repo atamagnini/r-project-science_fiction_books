@@ -4,7 +4,7 @@ library(data.table)
 library(htmlwidgets)
 
 #Loading multiple .csv files as separate data frames
-folder <- "D:/R scripts/script_300721_science_fiction_books/datasets/"
+folder <- "~/datasets/"
 file_list <- list.files(path = folder, pattern = "*.csv")
 for (i in 1:length(file_list)){
   assign(file_list[i], 
